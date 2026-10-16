@@ -156,3 +156,13 @@ ninja
 | [`PLAN.md`](PLAN.md) | 架构方案、路线图、决策索引 |
 | [`LEARNING_LOG.md`](LEARNING_LOG.md) | 学习笔记、踩过的坑、面试自查 |
 | [`HANDOFF.md`](HANDOFF.md) | 会话交接（进度、环境、已知边界） |
+
+---
+
+## License
+
+[MIT](LICENSE)
+
+> 本项目是独立实现，未复制 [FinceptTerminal](https://github.com/Fincept-Corporation/FinceptTerminal)
+> 的代码（后者为 AGPL-3.0）。本仓库仅通过 CMake `add_subdirectory` 在本地接入它，
+> 且不包含其任何源码。
