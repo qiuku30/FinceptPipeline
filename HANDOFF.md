@@ -161,6 +161,10 @@ A ✅ 插在 WebSocket 层（原始报文）—— 选它
 
 ## 五、工程约定
 
+- **远端仓库**：https://github.com/qiuku30/FinceptPipeline （`origin`，分支 `main`）
+- **git 身份**：`qiuku30` / `265786174+qiuku30@users.noreply.github.com`（全局配置，隐私地址）
+- **不提交的东西**（见 `.gitignore`）：`build/`、`compile_commands.json`（软链）、`.cache/`（clangd 索引）
+
 - 构建：`cd build && cmake .. -G Ninja && ninja && ctest`
 - **改了 CMakeLists 要重跑 cmake；只改 .h/.cpp 跑 ninja 就够**（历史事故：漏 ninja 直接 ctest = 跑旧二进制 = 假绿）
 - IDE 报 `'core/xxx.h' file not found` 等一堆错误 = **IntelliSense 噪音，以 cmake 编译为准**。
